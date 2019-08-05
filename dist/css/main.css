@@ -168,12 +168,13 @@ body {
 .foot {
   text-align: center;
   color: whitesmoke;
-  font-size: 1.2em;
   background-color: #5b5b5b;
   padding: 0.5em;
   height: 55px; }
 
 @media screen and (max-width: 768px) {
+  body {
+    scroll-behavior: smooth; }
   .navbar .contact-now {
     display: none; }
   .navbar .navbar-brand img {
@@ -248,7 +249,7 @@ body {
     .quality-halves .icon-half .icon {
       margin-top: 1.6em; }
       .quality-halves .icon-half .icon p {
-        font-size: 1.1em; }
+        font-size: 1.3em; }
       .quality-halves .icon-half .icon i {
         float: left;
         padding: 0.5em;
