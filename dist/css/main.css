@@ -1,0 +1,422 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn); } }
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'Noto Sans', sans-serif, Arial, Helvetica, sans-serif; }
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(242deg, rgba(195, 195, 195, 0.02) 0%, rgba(195, 195, 195, 0.02) 16.667%, rgba(91, 91, 91, 0.02) 16.667%, rgba(91, 91, 91, 0.02) 33.334%, rgba(230, 230, 230, 0.02) 33.334%, rgba(230, 230, 230, 0.02) 50.001%, rgba(18, 18, 18, 0.02) 50.001%, rgba(18, 18, 18, 0.02) 66.668%, rgba(163, 163, 163, 0.02) 66.668%, rgba(163, 163, 163, 0.02) 83.335%, rgba(140, 140, 140, 0.02) 83.335%, rgba(140, 140, 140, 0.02) 100.002%), linear-gradient(152deg, rgba(151, 151, 151, 0.02) 0%, rgba(151, 151, 151, 0.02) 16.667%, rgba(11, 11, 11, 0.02) 16.667%, rgba(11, 11, 11, 0.02) 33.334%, rgba(162, 162, 162, 0.02) 33.334%, rgba(162, 162, 162, 0.02) 50.001%, rgba(171, 171, 171, 0.02) 50.001%, rgba(171, 171, 171, 0.02) 66.668%, rgba(119, 119, 119, 0.02) 66.668%, rgba(119, 119, 119, 0.02) 83.335%, rgba(106, 106, 106, 0.02) 83.335%, rgba(106, 106, 106, 0.02) 100.002%), linear-gradient(11deg, rgba(245, 245, 245, 0.01) 0%, rgba(245, 245, 245, 0.01) 16.667%, rgba(23, 23, 23, 0.01) 16.667%, rgba(23, 23, 23, 0.01) 33.334%, rgba(96, 96, 96, 0.01) 33.334%, rgba(96, 96, 96, 0.01) 50.001%, rgba(140, 140, 140, 0.01) 50.001%, rgba(140, 140, 140, 0.01) 66.668%, rgba(120, 120, 120, 0.01) 66.668%, rgba(120, 120, 120, 0.01) 83.335%, rgba(48, 48, 48, 0.01) 83.335%, rgba(48, 48, 48, 0.01) 100.002%), linear-gradient(27deg, rgba(106, 106, 106, 0.03) 0%, rgba(106, 106, 106, 0.03) 14.286%, rgba(203, 203, 203, 0.03) 14.286%, rgba(203, 203, 203, 0.03) 28.572%, rgba(54, 54, 54, 0.03) 28.572%, rgba(54, 54, 54, 0.03) 42.858%, rgba(75, 75, 75, 0.03) 42.858%, rgba(75, 75, 75, 0.03) 57.144%, rgba(216, 216, 216, 0.03) 57.144%, rgba(216, 216, 216, 0.03) 71.43%, rgba(39, 39, 39, 0.03) 71.43%, rgba(39, 39, 39, 0.03) 85.716%, rgba(246, 246, 246, 0.03) 85.716%, rgba(246, 246, 246, 0.03) 100.002%), linear-gradient(317deg, rgba(215, 215, 215, 0.01) 0%, rgba(215, 215, 215, 0.01) 16.667%, rgba(72, 72, 72, 0.01) 16.667%, rgba(72, 72, 72, 0.01) 33.334%, rgba(253, 253, 253, 0.01) 33.334%, rgba(253, 253, 253, 0.01) 50.001%, rgba(4, 4, 4, 0.01) 50.001%, rgba(4, 4, 4, 0.01) 66.668%, rgba(183, 183, 183, 0.01) 66.668%, rgba(183, 183, 183, 0.01) 83.335%, rgba(17, 17, 17, 0.01) 83.335%, rgba(17, 17, 17, 0.01) 100.002%), linear-gradient(128deg, rgba(119, 119, 119, 0.03) 0%, rgba(119, 119, 119, 0.03) 12.5%, rgba(91, 91, 91, 0.03) 12.5%, rgba(91, 91, 91, 0.03) 25%, rgba(45, 45, 45, 0.03) 25%, rgba(45, 45, 45, 0.03) 37.5%, rgba(182, 182, 182, 0.03) 37.5%, rgba(182, 182, 182, 0.03) 50%, rgba(243, 243, 243, 0.03) 50%, rgba(243, 243, 243, 0.03) 62.5%, rgba(162, 162, 162, 0.03) 62.5%, rgba(162, 162, 162, 0.03) 75%, rgba(190, 190, 190, 0.03) 75%, rgba(190, 190, 190, 0.03) 87.5%, rgba(148, 148, 148, 0.03) 87.5%, rgba(148, 148, 148, 0.03) 100%), linear-gradient(90deg, #b98b50, #b01a06); }
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  z-index: 100; }
+  .navbar .contact-now {
+    color: white;
+    font-size: 1.1em;
+    padding-right: 2em; }
+  .navbar .navbar-nav li a {
+    font-size: 1.4em;
+    margin-left: 1em; }
+    .navbar .navbar-nav li a:hover {
+      text-decoration: underline;
+      transform: scale(1.1); }
+
+.hero-image {
+  height: 100vh;
+  background-image: url("../assets/cleanmain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero-image .hero-headings {
+    text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68); }
+    .hero-image .hero-headings h1 {
+      font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif; }
+    .hero-image .hero-headings h3 {
+      font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif; }
+    .hero-image .hero-headings span {
+      color: white;
+      font-family: 'Baloo Chettan', Arial, Helvetica, sans-serif; }
+    .hero-image .hero-headings a {
+      opacity: 0.8;
+      color: white;
+      font-size: 3em; }
+
+.about {
+  color: whitesmoke;
+  text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68); }
+  .about .about-heading {
+    text-align: center;
+    font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif; }
+  .about .about-par {
+    padding: 1em 3em 3em 3em;
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    line-height: 1.8em; }
+    .about .about-par span {
+      border-left: 6px solid #96281B;
+      margin-right: 15px; }
+    .about .about-par strong {
+      color: khaki; }
+
+.quote .quote-text {
+  background-color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr; }
+  .quote .quote-text p {
+    background-color: #EEEEEE;
+    border-radius: 10px; }
+
+.services .services-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68); }
+  .services .services-options .border {
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem; }
+    .services .services-options .border::before {
+      content: '';
+      position: absolute;
+      z-index: -2;
+      left: -50%;
+      top: -50%;
+      width: 200%;
+      height: 200%;
+      background-color: #96281B;
+      background-repeat: no-repeat;
+      background-size: 50% 50%, 50% 50%;
+      background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+      background-image: linear-gradient(#96281B, #96281B), linear-gradient(#96281B, #96281B), linear-gradient(#424242, #424242), linear-gradient(#424242, #424242);
+      animation: rotate 7s linear infinite; }
+    .services .services-options .border::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 6px;
+      top: 6px;
+      width: calc(100% - 12px);
+      height: calc(100% - 12px);
+      background: url("./assets/halfroof.jpg");
+      border-radius: 5px; }
+  .services .services-options div {
+    justify-self: center;
+    text-align: center;
+    background: #EEEEEE;
+    color: #4e1d27;
+    border-radius: 3px; }
+
+.qualities .quality-halves {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68);
+  padding: 1.7em;
+  color: white; }
+  .qualities .quality-halves .bio-half {
+    text-align: end;
+    padding: 1em 0; }
+    .qualities .quality-halves .bio-half h6 {
+      font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif; }
+    .qualities .quality-halves .bio-half p {
+      margin-top: 2em; }
+      .qualities .quality-halves .bio-half p span {
+        border-left: 6px solid #96281B;
+        margin-right: 15px; }
+      .qualities .quality-halves .bio-half p strong {
+        color: khaki; }
+  .qualities .quality-halves .icon-half {
+    border-radius: 5px;
+    margin: 0.7em; }
+    .qualities .quality-halves .icon-half .icon p {
+      display: inline;
+      margin: 0.5em; }
+    .qualities .quality-halves .icon-half .icon i {
+      display: inline;
+      color: #4e1d27;
+      margin: 0 1em;
+      background-color: whitesmoke;
+      border-radius: 50%; }
+
+.contact {
+  background-color: #EEEEEE;
+  padding: 2em;
+  margin-top: 4em; }
+  .contact h1 {
+    color: #4e1d27;
+    text-align: center;
+    font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif; }
+  .contact .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    color: #4e1d27; }
+    .contact .contact-info .info {
+      margin: 1em; }
+      .contact .contact-info .info div {
+        margin-top: 3em; }
+      .contact .contact-info .info i {
+        margin-right: 1em; }
+      .contact .contact-info .info p {
+        text-align: start; }
+
+.foot {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.2em;
+  background-color: #5b5b5b;
+  padding: 0.5em;
+  height: 55px; }
+
+@media screen and (max-width: 768px) {
+  .navbar .contact-now {
+    display: none; }
+  .navbar .navbar-brand img {
+    height: 60px;
+    width: 60px; }
+  .hero .hero-image .hero-headings {
+    padding-top: 25vh;
+    text-align: center; }
+    .hero .hero-image .hero-headings h1 {
+      font-size: 2.4em; }
+    .hero .hero-image .hero-headings h3 {
+      margin: 1em;
+      font-size: 2.2em; }
+    .hero .hero-image .hero-headings a i {
+      margin-top: 3em; }
+  .about {
+    color: whitesmoke; }
+    .about .about-heading {
+      padding-top: 10vh; }
+      .about .about-heading h2 {
+        font-size: 3em; }
+    .about .about-par {
+      padding: 1em 1.5em 1.5em 1.5em;
+      font-size: 1.2em;
+      letter-spacing: 3px;
+      line-height: 1.5em; }
+      .about .about-par .mobile-hide {
+        display: none; }
+  .quote .quote-text {
+    padding: 2em; }
+    .quote .quote-text p {
+      color: #4e1d27;
+      font-size: 1.2em;
+      padding: 1em; }
+  .services-options div {
+    grid-column: 1/4;
+    justify-self: center;
+    text-align: center;
+    background: #EEEEEE;
+    color: #4e1d27;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 3px; }
+    .services-options div img {
+      width: 300px;
+      height: 250px;
+      border-radius: 5px; }
+    .services-options div p:nth-of-type(1) {
+      font-size: 1.8em;
+      padding: 0.5em; }
+    .services-options div p:nth-of-type(2) {
+      padding: 0 1.7em 1.7em 1.7em;
+      font-size: 1.1em; }
+  .quality-halves .bio-half {
+    grid-column: 1/4;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68);
+    border-top: 4px dashed black;
+    border-bottom: 4px dashed black; }
+    .quality-halves .bio-half h6 {
+      font-size: 1.7em; }
+    .quality-halves .bio-half p {
+      font-size: 1.1em;
+      line-height: 190%;
+      font-weight: 500; }
+  .quality-halves .icon-half {
+    text-align: center;
+    grid-column: 1/4;
+    padding: 1.9em 0;
+    border-bottom: 4px dashed black; }
+    .quality-halves .icon-half .icon {
+      margin-top: 1.6em; }
+      .quality-halves .icon-half .icon p {
+        font-size: 1.1em; }
+      .quality-halves .icon-half .icon i {
+        float: left;
+        padding: 0.5em;
+        font-size: 1.5em; }
+  .contact-info .info {
+    grid-column: 1/4;
+    display: grid;
+    padding: 0; }
+    .contact-info .info .infocon {
+      grid-column: 1/3; }
+      .contact-info .info .infocon p {
+        font-size: 1.2em; }
+      .contact-info .info .infocon .hide-icon {
+        display: none; }
+      .contact-info .info .infocon i {
+        font-size: 1.3em; }
+  .contact-info .contact-image {
+    grid-column: 1/4; }
+    .contact-info .contact-image img {
+      padding: 2em;
+      width: 300px;
+      height: 300px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .navbar .navbar-brand img {
+    height: 70px;
+    width: 70px; }
+  .hero .hero-image {
+    background-position-y: -500px; }
+    .hero .hero-image .hero-headings {
+      padding-top: 25vh;
+      text-align: center; }
+      .hero .hero-image .hero-headings h1 {
+        font-size: 4em;
+        font-family: 'Baloo Chettan', cursive;
+        margin-bottom: 3em; }
+      .hero .hero-image .hero-headings h3 {
+        padding: 1em;
+        font-size: 3em; }
+  .about-heading {
+    margin-top: 10vh; }
+    .about-heading h2 {
+      font-size: 3em; }
+  .quote-text {
+    padding: 2em; }
+    .quote-text p {
+      padding: 2em;
+      font-size: 1.5em; }
+  .services-options {
+    padding: 2em 0; }
+    .services-options div .border {
+      width: 410px;
+      height: 333px; }
+      .services-options div .border img {
+        width: 370px;
+        height: 300px;
+        border-radius: 3px; }
+    .services-options div p:nth-of-type(1) {
+      font-size: 2.2em;
+      padding: 0.5em; }
+    .services-options div p:nth-of-type(2) {
+      padding: 0 1.5em 1.5em 1.5em;
+      font-size: 1.3em; }
+  .quality-halves {
+    border-top: #424242 9px dashed;
+    border-bottom: #424242 9px dashed; }
+    .quality-halves .bio-half {
+      letter-spacing: 5px;
+      padding: 2em; }
+      .quality-halves .bio-half h6 {
+        font-size: 2.8em; }
+      .quality-halves .bio-half p {
+        font-size: 1.3em;
+        line-height: 250%; }
+    .quality-halves .icon-half {
+      padding: 4em 2em 2em 2em; }
+      .quality-halves .icon-half .icon {
+        margin-top: 3.5em; }
+        .quality-halves .icon-half .icon p {
+          margin: 0.5em;
+          font-size: 1.6em; }
+        .quality-halves .icon-half .icon i {
+          padding: 0.5em;
+          font-size: 2em; }
+  .contact-info {
+    padding: 2em; }
+    .contact-info .info i {
+      font-size: 1.5em; }
+    .contact-info .info p {
+      font-size: 1.5em;
+      letter-spacing: 3px; }
+    .contact-info .contact-image img {
+      padding: 2em;
+      width: 450px;
+      height: 450px; } }
+
+@media screen and (min-width: 1171px) {
+  .navbar .navbar-brand img {
+    height: 70px;
+    width: 70px; }
+  .hero .hero-image {
+    background-position-y: -500px; }
+    .hero .hero-image .hero-headings {
+      padding-top: 25vh;
+      text-align: center; }
+      .hero .hero-image .hero-headings h1 {
+        font-size: 4em;
+        font-family: 'Baloo Chettan', cursive;
+        margin-bottom: 3em; }
+      .hero .hero-image .hero-headings h3 {
+        padding: 1em;
+        font-size: 3em; }
+  .about-heading {
+    margin-top: 10vh; }
+    .about-heading h2 {
+      font-size: 3em; }
+  .quote-text {
+    padding: 2em; }
+    .quote-text p {
+      padding: 2em;
+      font-size: 1.5em; }
+  .services-options {
+    padding: 2em 0; }
+    .services-options div {
+      margin: 1em;
+      padding: 1em; }
+      .services-options div .border {
+        width: 410px;
+        height: 333px; }
+        .services-options div .border img {
+          width: 370px;
+          height: 300px;
+          border-radius: 3px; }
+      .services-options div p:nth-of-type(1) {
+        font-size: 2.2em;
+        padding: 0.5em; }
+      .services-options div p:nth-of-type(2) {
+        padding: 0 1.5em 1.5em 1.5em;
+        font-size: 1.3em; }
+  .quality-halves {
+    border-top: #424242 9px dashed;
+    border-bottom: #424242 9px dashed; }
+    .quality-halves .bio-half {
+      letter-spacing: 5px;
+      padding: 2em; }
+      .quality-halves .bio-half h6 {
+        font-size: 2.8em; }
+      .quality-halves .bio-half p {
+        font-size: 1.3em;
+        line-height: 250%; }
+    .quality-halves .icon-half {
+      padding: 4em 2em 2em 2em; }
+      .quality-halves .icon-half .icon {
+        margin-top: 3.5em; }
+        .quality-halves .icon-half .icon p {
+          margin: 0.5em;
+          font-size: 1.6em; }
+        .quality-halves .icon-half .icon i {
+          padding: 0.5em;
+          font-size: 2em; }
+  .contact-info {
+    padding: 2em; }
+    .contact-info .info i {
+      font-size: 1.5em; }
+    .contact-info .info p {
+      font-size: 1.5em;
+      letter-spacing: 3px; }
+    .contact-info .contact-image img {
+      padding: 2em;
+      width: 450px;
+      height: 450px; } }

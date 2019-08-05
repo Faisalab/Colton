@@ -1,0 +1,233 @@
+@import 'config';
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background: linear-gradient(242deg, rgba(195, 195, 195, 0.02) 0%, rgba(195, 195, 195, 0.02) 16.667%,rgba(91, 91, 91, 0.02) 16.667%, rgba(91, 91, 91, 0.02) 33.334%,rgba(230, 230, 230, 0.02) 33.334%, rgba(230, 230, 230, 0.02) 50.001000000000005%,rgba(18, 18, 18, 0.02) 50.001%, rgba(18, 18, 18, 0.02) 66.668%,rgba(163, 163, 163, 0.02) 66.668%, rgba(163, 163, 163, 0.02) 83.33500000000001%,rgba(140, 140, 140, 0.02) 83.335%, rgba(140, 140, 140, 0.02) 100.002%),linear-gradient(152deg, rgba(151, 151, 151, 0.02) 0%, rgba(151, 151, 151, 0.02) 16.667%,rgba(11, 11, 11, 0.02) 16.667%, rgba(11, 11, 11, 0.02) 33.334%,rgba(162, 162, 162, 0.02) 33.334%, rgba(162, 162, 162, 0.02) 50.001000000000005%,rgba(171, 171, 171, 0.02) 50.001%, rgba(171, 171, 171, 0.02) 66.668%,rgba(119, 119, 119, 0.02) 66.668%, rgba(119, 119, 119, 0.02) 83.33500000000001%,rgba(106, 106, 106, 0.02) 83.335%, rgba(106, 106, 106, 0.02) 100.002%),linear-gradient(11deg, rgba(245, 245, 245, 0.01) 0%, rgba(245, 245, 245, 0.01) 16.667%,rgba(23, 23, 23, 0.01) 16.667%, rgba(23, 23, 23, 0.01) 33.334%,rgba(96, 96, 96, 0.01) 33.334%, rgba(96, 96, 96, 0.01) 50.001000000000005%,rgba(140, 140, 140, 0.01) 50.001%, rgba(140, 140, 140, 0.01) 66.668%,rgba(120, 120, 120, 0.01) 66.668%, rgba(120, 120, 120, 0.01) 83.33500000000001%,rgba(48, 48, 48, 0.01) 83.335%, rgba(48, 48, 48, 0.01) 100.002%),linear-gradient(27deg, rgba(106, 106, 106, 0.03) 0%, rgba(106, 106, 106, 0.03) 14.286%,rgba(203, 203, 203, 0.03) 14.286%, rgba(203, 203, 203, 0.03) 28.572%,rgba(54, 54, 54, 0.03) 28.572%, rgba(54, 54, 54, 0.03) 42.858%,rgba(75, 75, 75, 0.03) 42.858%, rgba(75, 75, 75, 0.03) 57.144%,rgba(216, 216, 216, 0.03) 57.144%, rgba(216, 216, 216, 0.03) 71.42999999999999%,rgba(39, 39, 39, 0.03) 71.43%, rgba(39, 39, 39, 0.03) 85.71600000000001%,rgba(246, 246, 246, 0.03) 85.716%, rgba(246, 246, 246, 0.03) 100.002%),linear-gradient(317deg, rgba(215, 215, 215, 0.01) 0%, rgba(215, 215, 215, 0.01) 16.667%,rgba(72, 72, 72, 0.01) 16.667%, rgba(72, 72, 72, 0.01) 33.334%,rgba(253, 253, 253, 0.01) 33.334%, rgba(253, 253, 253, 0.01) 50.001000000000005%,rgba(4, 4, 4, 0.01) 50.001%, rgba(4, 4, 4, 0.01) 66.668%,rgba(183, 183, 183, 0.01) 66.668%, rgba(183, 183, 183, 0.01) 83.33500000000001%,rgba(17, 17, 17, 0.01) 83.335%, rgba(17, 17, 17, 0.01) 100.002%),linear-gradient(128deg, rgba(119, 119, 119, 0.03) 0%, rgba(119, 119, 119, 0.03) 12.5%,rgba(91, 91, 91, 0.03) 12.5%, rgba(91, 91, 91, 0.03) 25%,rgba(45, 45, 45, 0.03) 25%, rgba(45, 45, 45, 0.03) 37.5%,rgba(182, 182, 182, 0.03) 37.5%, rgba(182, 182, 182, 0.03) 50%,rgba(243, 243, 243, 0.03) 50%, rgba(243, 243, 243, 0.03) 62.5%,rgba(162, 162, 162, 0.03) 62.5%, rgba(162, 162, 162, 0.03) 75%,rgba(190, 190, 190, 0.03) 75%, rgba(190, 190, 190, 0.03) 87.5%,rgba(148, 148, 148, 0.03) 87.5%, rgba(148, 148, 148, 0.03) 100%),linear-gradient(90deg, rgb(185, 139, 80),rgb(176, 26, 6));
+}
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    .contact-now{
+        color: white;
+        font-size: 1.1em;
+        padding-right: 2em;
+    }
+
+    .navbar-nav{
+        li{
+            a{
+                font-size: 1.4em;
+                margin-left: 1em;
+                &:hover{
+                    text-decoration: underline;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.hero-image{
+    height: 100vh;
+    background-image: $hero-image;
+    background-repeat:no-repeat;
+    background-size:cover;
+    .hero-headings{
+        text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68);
+        h1{
+            font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif;
+        }
+        h3{
+            font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif;
+        }
+        span{
+            color: white;
+            font-family: 'Baloo Chettan', Arial, Helvetica, sans-serif;
+        }
+        a{
+            opacity: 0.8;
+            color: white;
+            font-size: 3em;
+        }
+    }
+}
+
+.about{
+    color: whitesmoke;
+    text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68);
+    .about-heading{
+        text-align: center;
+        font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif;
+    }
+    .about-par{
+        padding: 1em 3em 3em 3em;
+        font-size: 1.4em;
+        // text-align: center;
+        letter-spacing: 5px;
+        line-height: 1.8em;
+        span{
+            border-left: 6px solid #96281B;
+            margin-right: 15px;
+        }
+        strong{
+            color: khaki;
+        }
+    }
+}
+
+.quote{
+    .quote-text{
+        background-color: white;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        p{
+            background-color: #EEEEEE;
+            border-radius: 10px;
+        }
+    }
+}
+
+.services{
+    .services-options{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68);
+            .border {
+                position: relative;
+                margin: 0 auto;
+                z-index: 0;
+                border-radius: 10px;
+                overflow: hidden;
+                padding: 1rem;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: -2;
+                    left: -50%;
+                    top: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background-color: #96281B;
+                    background-repeat: no-repeat;
+                    background-size: 50% 50%, 50% 50%;
+                    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+                    background-image: linear-gradient(#96281B, #96281B), linear-gradient(#96281B, #96281B), linear-gradient(#424242, #424242), linear-gradient(#424242, #424242);
+                    animation: rotate 7s linear infinite;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    z-index:-1;
+                    left: 6px;
+                    top: 6px;
+                    width: calc(100% - 12px);
+                    height: calc(100% - 12px);
+                    background: url('./assets/halfroof.jpg');
+                    border-radius: 5px;
+                }
+
+        }
+        div{
+            justify-self: center;
+            text-align: center;
+            background: #EEEEEE;
+            color: rgb(78, 29, 39);
+            border-radius: 3px;
+        }
+    }
+}
+
+.qualities{
+    .quality-halves{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-shadow: -1px 0px 1px rgba(150, 150, 150, 0.68);
+        padding: 1.7em;
+        color: white;
+
+        .bio-half{
+            text-align: end;
+            padding: 1em 0;
+            h6{
+                font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif;
+            }
+            p{
+                margin-top: 2em;
+                span{
+                    border-left: 6px solid #96281B;
+                    margin-right: 15px;
+                }
+                strong{
+                    color: khaki;
+                }
+            }
+        }
+        .icon-half{
+            border-radius: 5px;
+            margin: 0.7em;
+            .icon{
+                p{
+                    display: inline;
+                    margin: 0.5em;
+                }
+                i{
+                    display: inline;
+                    color: rgb(78, 29, 39);
+                    margin: 0 1em;
+                    background-color: whitesmoke;
+                    border-radius: 50%;
+                }
+            }
+            }
+    }
+}
+
+.contact{
+    background-color: #EEEEEE;
+    padding: 2em;
+    margin-top: 4em;
+    h1{
+        color: rgb(78, 29, 39);
+        text-align: center;
+        font-family: 'Baloo Chettan', 'Noto Sans', Arial, Helvetica, sans-serif;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        color: rgb(78, 29, 39);
+        .info{
+            margin: 1em;
+            div{
+                margin-top: 3em;
+            }
+            i{
+                margin-right: 1em;
+            }
+            p{
+                text-align: start;
+            }
+        }
+    }
+
+}
+
+.foot{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.2em;
+    background-color: rgb(91, 91, 91);
+    padding: 0.5em;
+    height: 55px;
+}
+
+
+@import 'mobile';
