@@ -6,7 +6,9 @@
 }
 
 @include mediaMd {
-
+    body{
+        scroll-behavior: smooth;
+    }
     .navbar{
         .contact-now{
             display: none;
